@@ -6,7 +6,7 @@ COPY ./setup.py /code/setup.py
 
 COPY ./requirements.txt /code/requirements.txt
 
-COPY ./README.md /code/README.md
+COPY ./readme.md /code/readme.md
 
 COPY ./src /code/src
 
