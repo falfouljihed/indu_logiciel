@@ -10,7 +10,7 @@ COPY ./readme.md /code/readme.md
 
 COPY ./src /code/src
 
-RUN pip install /code
+RUN  pip install -r requirements.txt
 
 COPY ./controller /code/controller
 
