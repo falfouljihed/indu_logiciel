@@ -45,10 +45,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          
-sonar-project.properties
-sonar.python.coverage.reportPaths = coverage.xml
-sonar.coverage.exclusions = **/tests/**,**/controller/**,setup.py,test_wheel.py
+        run: |
+          sonar-project.properties :
+          sonar.python.coverage.reportPaths = coverage.xml
+          sonar.coverage.exclusions = **/tests/**,**/controller/**,setup.py,test_wheel.py
 
   build-docker-image:
     runs-on: ubuntu-latest
