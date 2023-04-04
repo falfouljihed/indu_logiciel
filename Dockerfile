@@ -1,9 +1,8 @@
 FROM python:3.9
 
-RUN addgroup -S nonroot \
-    && adduser -S nonroot -G nonroot
-
-USER nonroot
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1001 ubuntu
+USER ubuntu
+WORKDIR /home/ubuntu
 
 WORKDIR /code
 
