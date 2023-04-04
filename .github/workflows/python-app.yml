@@ -43,8 +43,9 @@ jobs:
       - name: SonarCloud Scan # Add a SonarCloud Scan step to make the connection with SonarCloud
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: sonar-properties
         run: |
           sonar-project.properties :
           sonar.python.coverage.reportPaths = coverage.xml
