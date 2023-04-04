@@ -27,3 +27,15 @@
 
 ### À quoi sert l’indicateur Quality Gate ?
 - Quality Gate : Indicateur qui permet de savoir si le projet est conforme aux standards de qualité ou non
+
+### Quelle est la différence entre les sections New code et Overall Code dans l’onglet Summary ?
+- New code : le résultat de l'analyse du code ajouté
+- Overall code : le résultat de l'analyse du code total
+### Y a-t-il des Code Smells ? Si oui, combien et pour quelle(s) raisons(s) ?
+- oui, 3 code smells 
+  - enlever un paramètre de fonction non-utiliser (differed : spend_cash)
+  - enlever un paramètre de fonction non-utiliser (differed : spend_money)
+  - deux fonctions identiques (spend_cash et spend_money)
+### Y a-t-il des Security Hotspots ? Si oui, combien et pour quelle(s) raison(s) ?
+- oui, 1 Security hotspot
+  - image python est lancer avec les droits root
