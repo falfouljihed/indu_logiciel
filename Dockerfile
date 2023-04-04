@@ -2,7 +2,6 @@ FROM python:3.9
 
 RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1001 ubuntu
 USER ubuntu
-WORKDIR /home/ubuntu
 
 WORKDIR /code
 
